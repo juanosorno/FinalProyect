@@ -8,17 +8,23 @@ import com.google.firebase.storage.StorageReference;
 public class FirebaseConnection {
 
     private static FirebaseAuth mAuth;
-    private static StorageReference mStorageRef;
+    //private static StorageReference mStorageRef;
     private static FirebaseFirestore db;
+    private static FirebaseStorage mFirebaseStorage;
 
     public  static FirebaseAuth ConnectionAuth() {
         mAuth = FirebaseAuth.getInstance();
         return mAuth;
     }
 
-    public static StorageReference ConnectionStorage(){
+    /*public static StorageReference ConnectionStorage(){
         mStorageRef = FirebaseStorage.getInstance().getReference();
         return mStorageRef;
+    }*/
+
+    public static FirebaseStorage ConnectionStorage(){
+        mFirebaseStorage = FirebaseStorage.getInstance();
+        return mFirebaseStorage;
     }
 
     public static FirebaseFirestore ConnectionFirestore(){
