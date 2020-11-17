@@ -29,7 +29,6 @@ import java.util.ArrayList;
 
     protected FirebaseFirestore db;
     protected FirebaseAuth mAuth;
-   //protected StorageReference mStorageRef;
     protected FirebaseStorage mFirebaseStorage;
 
     protected Query query;
@@ -70,7 +69,7 @@ import java.util.ArrayList;
     }
 
     protected void goToList(){
-       Intent intent = new Intent(this, BaseActivity.class);
+       Intent intent = new Intent(this, ListActivity.class);
        startActivity(intent);
     }
 
