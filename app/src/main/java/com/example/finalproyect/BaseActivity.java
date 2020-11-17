@@ -75,7 +75,7 @@ import java.util.ArrayList;
     }
 
     protected void goToCreate(){
-       Intent intent = new Intent(this, BaseActivity.class);
+       Intent intent = new Intent(this, CreateActivity.class);
        startActivity(intent);
     }
 

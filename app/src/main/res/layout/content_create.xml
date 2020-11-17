@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_create_title" />
 
     <ImageView
-        android:id="@+id/tv_create_image"
+        android:id="@+id/iv_create_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
@@ -51,10 +51,10 @@
         android:hint="Insert serial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_create_image" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_create_image" />
 
     <EditText
-        android:id="@+id/tv_create_brand"
+        android:id="@+id/et_create_brand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_create_serial" />
 
     <EditText
-        android:id="@+id/tv_create_description"
+        android:id="@+id/et_create_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
@@ -75,5 +75,5 @@
         android:hint="Insert descriptopn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_create_brand" />
+        app:layout_constraintTop_toBottomOf="@+id/et_create_brand" />
 </androidx.constraintlayout.widget.ConstraintLayout>
