@@ -47,7 +47,7 @@ public class ListActivity extends BaseActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 model = modelArrayList.get(i);
-                makeSimpleAlertDialog("Opening", "Cell: " + model.getSerial());
+                goToDetail(model);
             }
         });
 
