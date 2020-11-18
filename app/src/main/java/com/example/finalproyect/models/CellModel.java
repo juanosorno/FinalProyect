@@ -6,8 +6,6 @@ public class CellModel implements  Serializable{
     private String serial;
     private String description;
     private String brand;
-    private String imageURL;
-    private boolean active;
 
 
     public String getId() {
@@ -42,19 +40,4 @@ public class CellModel implements  Serializable{
         this.brand = brand;
     }
 
-    public String getImageURL() {
-        return imageURL;
-    }
-
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
-    }
-
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
 }

@@ -1,5 +1,6 @@
 package com.example.finalproyect;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.finalproyect.models.CellModel;
@@ -24,7 +25,7 @@ public class CreateActivity extends BaseActivity {
     FloatingActionButton fab_create_save, fab_create_clear, fab_create_back;
     ImageView iv_create_image;
     TextView tv_create_click_image;
-     EditText et_create_serial, et_create_brand, et_create_description;
+    EditText et_create_serial, et_create_brand, et_create_description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,17 +54,16 @@ public class CreateActivity extends BaseActivity {
         fab_create_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String serial, description, brand;
-                boolean active;
+                final String serial, description, brand;
 
                 serial = et_create_serial.getText().toString();
                 description = et_create_description.getText().toString();
                 brand = et_create_brand.getText().toString();
+
                 if (serial.isEmpty() || description.isEmpty() || brand.isEmpty()){
                     makeSimpleAlertDialog("Info", "Please fill all field");
                 }else{
                     model = new CellModel();
-                    model.setActive(true);
                     model.setDescription(description);
                     model.setBrand(brand);
                     model.setSerial(serial);

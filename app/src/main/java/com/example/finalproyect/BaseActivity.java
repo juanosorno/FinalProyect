@@ -78,15 +78,6 @@ import java.util.ArrayList;
        startActivity(intent);
     }
 
-    protected void goToEdit(){
-       Intent intent = new Intent(this, BaseActivity.class);
-       startActivity(intent);
-    }
-
-    protected void goToSearch(){
-       Intent intent = new Intent(this, BaseActivity.class);
-       startActivity(intent);
-    }
 
     protected void goToDetail(CellModel model){
        Intent intent = new Intent(this, DetailActivity.class);
